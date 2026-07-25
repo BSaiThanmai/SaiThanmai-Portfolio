@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Badri Saithanmai | AI/ML Engineer & Data Analyst Portfolio</title>
+  <meta name="description" content="Personal portfolio of Badri Saithanmai - Computer Science (AIML) engineer specializing in predictive modeling, speech AI integration, data analytics, and SQL." />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dark: { bg: '#0B0F19', card: '#111827', border: 'rgba(255, 255, 255, 0.08)' }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Glassmorphism Styles -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0B0F19;
+      color: #F9FAFB;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .light body {
+      background-color: #F8FAFC;
+      color: #0F172A;
+    }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .light .glass-card {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid #E2E8F0;
+    }
+    .glass-header {
+      background: rgba(11, 15, 25, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .light .glass-header {
+      background: rgba(255, 255, 255, 0.85);
+      border-bottom: 1px solid #E2E8F0;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #06B6D4 0%, #8B5CF6 50%, #3B82F6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-[#0B0F19] text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+  <!-- HEADER NAVBAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-header py-4 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 text-xl font-bold font-heading text-white">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-violet-600 flex items-center justify-center text-white shadow-lg shadow-cyan-500/20">
+          <i data-lucide="code-2" class="w-5 h-5"></i>
+        </div>
+        <span>Badri <span class="gradient-text">Saithanmai</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-1 bg-slate-900/60 p-1.5 rounded-full border border-slate-800 backdrop-blur-md">
+        <a href="#about" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 rounded-full transition">About</a>
+        <a href="#projects" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 rounded-full transition">Projects</a>
+        <a href="#skills" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 rounded-full transition">Skills</a>
+        <a href="#experience" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 rounded-full transition">Experience</a>
+        <a href="#certifications" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 rounded-full transition">Certifications</a>
+        <a href="#contact" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 rounded-full transition">Contact</a>
+      </nav>
+
+      <!-- Right Actions -->
+      <div className="flex items-center gap-4">
+        <button id="themeToggle" class="p-2.5 rounded-full bg-slate-800 border border-slate-700 text-amber-400 hover:scale-105 transition" aria-label="Toggle Mode">
+          <i data-lucide="sun" class="w-5 h-5"></i>
+        </button>
+        <a href="mailto:hthanmai@gmail.com" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full shadow-lg shadow-cyan-500/20 hover:scale-105 transition">
+          <i data-lucide="sparkles" class="w-4 h-4"></i> Hire Me
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/20 via-violet-600/20 to-blue-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+        <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-sm font-medium">
+          <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
+          <span>Available for IT & AI/ML Opportunities</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl font-extrabold font-heading tracking-tight leading-tight text-white">
+          Hi, I'm <span class="gradient-text">Badri Saithanmai</span>
+          <span class="text-3xl sm:text-5xl text-slate-300 font-bold block mt-2">AI/ML Engineer & Data Analyst</span>
+        </h1>
+
+        <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+          Computer Science (AIML) graduate candidate specializing in <strong class="text-cyan-400">Machine Learning models</strong>, <strong class="text-violet-400">Speech AI Webhooks</strong>, and <strong class="text-cyan-400">Data Analytics</strong>. Hands-on experience with Python, Azure ML, SQL, and Power BI.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-slate-400">
+          <span class="flex items-center gap-1.5 bg-slate-900/60 px-3 py-1.5 rounded-lg border border-slate-800"><i data-lucide="map-pin" class="w-4 h-4 text-cyan-400"></i> Hyderabad, India</span>
+          <span class="flex items-center gap-1.5 bg-slate-900/60 px-3 py-1.5 rounded-lg border border-slate-800"><i data-lucide="mail" class="w-4 h-4 text-violet-400"></i> hthanmai@gmail.com</span>
+          <span class="flex items-center gap-1.5 bg-slate-900/60 px-3 py-1.5 rounded-lg border border-slate-800"><i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i> +91 9347765443</span>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+          <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-semibold text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-violet-600 shadow-lg shadow-cyan-500/25 hover:scale-105 transition">
+            <span>View My Work</span>
+            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-semibold text-slate-200 bg-slate-800/80 border border-slate-700 hover:border-cyan-500/50 transition shadow-md">
+            <span>Contact Me</span>
+          </a>
+          <a href="mailto:hthanmai@gmail.com?subject=Interview%20Opportunity" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-full font-medium text-slate-300 border border-slate-800 hover:border-slate-700 transition">
+            <i data-lucide="download" class="w-4 h-4"></i> Get CV
+          </a>
+        </div>
+
+        <div class="flex items-center justify-center lg:justify-start gap-4 pt-4 border-t border-slate-800">
+          <span class="text-xs uppercase font-semibold text-slate-500">Connect:</span>
+          <a href="https://github.com/BSaiThanmai" target="_blank" class="p-2.5 rounded-xl bg-slate-800/60 text-slate-400 hover:text-cyan-400 border border-slate-700/50 hover:scale-110 transition"><i data-lucide="github" class="w-5 h-5"></i></a>
+          <a href="https://www.linkedin.com/in/saithanmai" target="_blank" class="p-2.5 rounded-xl bg-slate-800/60 text-slate-400 hover:text-cyan-400 border border-slate-700/50 hover:scale-110 transition"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+          <a href="mailto:hthanmai@gmail.com" class="p-2.5 rounded-xl bg-slate-800/60 text-slate-400 hover:text-cyan-400 border border-slate-700/50 hover:scale-110 transition"><i data-lucide="mail" class="w-5 h-5"></i></a>
+        </div>
+      </div>
+
+      <!-- Feature Card -->
+      <div class="lg:col-span-5">
+        <div class="glass-card p-8 rounded-3xl border border-slate-800 shadow-2xl space-y-6">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-2xl bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                <i data-lucide="cpu" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-white text-lg">B.Tech AIML</h3>
+                <p class="text-xs text-slate-400">Class of 2026 • 7.91 CGPA</p>
+              </div>
+            </div>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Active Intern</span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div class="text-2xl font-extrabold text-white gradient-text">7.91</div>
+              <div class="text-xs font-semibold text-slate-300">CGPA Score</div>
+              <div class="text-[11px] text-slate-500 mt-1">MRITS Engineering</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div class="text-2xl font-extrabold text-white gradient-text">3+</div>
+              <div class="text-xs font-semibold text-slate-300">AI/ML Projects</div>
+              <div class="text-[11px] text-slate-500 mt-1">Voice AI, ML Models</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div class="text-2xl font-extrabold text-white gradient-text">2</div>
+              <div class="text-xs font-semibold text-slate-300">Internships</div>
+              <div class="text-[11px] text-slate-500 mt-1">SAL & Edunet</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div class="text-2xl font-extrabold text-white gradient-text">4+</div>
+              <div class="text-xs font-semibold text-slate-300">Certifications</div>
+              <div class="text-[11px] text-slate-500 mt-1">Power BI, Azure ML</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-cyan-400 bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/20">About Me</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">Technical Rigor & <span class="gradient-text">Problem Solving</span></h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div class="lg:col-span-7 glass-card p-8 rounded-3xl border border-slate-800 space-y-6">
+          <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+            <i data-lucide="target" class="w-6 h-6 text-cyan-400"></i> Background Overview
+          </h3>
+          <p class="text-slate-300 leading-relaxed">
+            Motivated Computer Science (AIML) student with strong foundations in Python, OOPs, DBMS, and core software development concepts. Hands-on experience in building and deploying machine learning models through academic and internship projects. Comfortable working with databases, writing structured queries, and applying problem-solving skills to real-world scenarios.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800 flex items-start gap-3">
+              <i data-lucide="lightbulb" class="w-5 h-5 text-amber-400 mt-1"></i>
+              <div>
+                <h4 class="font-semibold text-white text-sm">Analytical Thinking</h4>
+                <p class="text-xs text-slate-400 mt-1">Dissecting complex datasets into actionable business insights.</p>
+              </div>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800 flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-400 mt-1"></i>
+              <div>
+                <h4 class="font-semibold text-white text-sm">Rapid Adaptability</h4>
+                <p class="text-xs text-slate-400 mt-1">Mastering new AI frameworks, webhooks, and cloud platforms.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 glass-card p-8 rounded-3xl border border-slate-800 space-y-6">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-violet-500/20 border border-violet-500/30 flex items-center justify-center text-violet-400">
+              <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-violet-400 uppercase">Education Spotlight</span>
+              <h3 class="text-xl font-bold text-white">B.Tech in Computer Science (AIML)</h3>
+            </div>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-3">
+            <p class="text-sm font-semibold text-cyan-400">MallaReddy Institute of Technology And Sciences</p>
+            <span class="inline-block px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 text-xs font-bold border border-emerald-500/20">CGPA: 7.91 / 10.0 (2022 – 2026)</span>
+            <ul class="space-y-2 pt-2 border-t border-slate-800 text-xs text-slate-300">
+              <li class="flex items-start gap-2"><i data-lucide="book-open" class="w-3.5 h-3.5 text-cyan-400 mt-0.5"></i> Specializing in AI, Machine Learning, Data Analytics & SQL.</li>
+              <li class="flex items-start gap-2"><i data-lucide="book-open" class="w-3.5 h-3.5 text-cyan-400 mt-0.5"></i> Active Hackathon Presenter and Learnathon Volunteer.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="py-24 relative bg-slate-950/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-cyan-400 bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/20">Portfolio Showcase</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">Featured <span class="gradient-text">AI & Machine Learning Projects</span></h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project Card 1 -->
+        <div class="glass-card rounded-3xl border border-slate-800 hover:border-cyan-500/40 p-6 flex flex-col justify-between transition-all hover:-translate-y-2">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-10 h-10 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400"><i data-lucide="folder-git-2" class="w-5 h-5"></i></div>
+              <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-900 text-cyan-400 border border-slate-700">Voice & Web AI</span>
+            </div>
+            <h3 class="text-xl font-bold font-heading text-white">AI Sales Call Agent</h3>
+            <p class="text-sm text-slate-400 line-clamp-3">Automated real-time voice sales agent combining Python, Flask, Gemini API, and Twilio webhooks for interactive customer workflows.</p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Python</span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Gemini API</span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Twilio</span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Flask</span>
+            </div>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-800 flex items-center justify-between">
+            <a href="https://github.com/BSaiThanmai/AI-Call-Agent" target="_blank" class="text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1"><span>GitHub Repo</span> <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="glass-card rounded-3xl border border-slate-800 hover:border-cyan-500/40 p-6 flex flex-col justify-between transition-all hover:-translate-y-2">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-10 h-10 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center text-violet-400"><i data-lucide="folder-git-2" class="w-5 h-5"></i></div>
+              <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-900 text-violet-400 border border-slate-700">Machine Learning</span>
+            </div>
+            <h3 class="text-xl font-bold font-heading text-white">Ransomware Detection System</h3>
+            <p class="text-sm text-slate-400 line-clamp-3">Machine learning-based ransomware detection system analyzing disk and activity patterns to classify malicious behavior with high accuracy.</p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Python</span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Scikit-Learn</span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Feature Extraction</span>
+            </div>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-800 flex items-center justify-between">
+            <a href="https://github.com/BSaiThanmai/Ransomware-Detection" target="_blank" class="text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1"><span>GitHub Repo</span> <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="glass-card rounded-3xl border border-slate-800 hover:border-cyan-500/40 p-6 flex flex-col justify-between transition-all hover:-translate-y-2">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-10 h-10 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400"><i data-lucide="folder-git-2" class="w-5 h-5"></i></div>
+              <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-900 text-emerald-400 border border-slate-700">Machine Learning</span>
+            </div>
+            <h3 class="text-xl font-bold font-heading text-white">Calories Burned Prediction</h3>
+            <p class="text-sm text-slate-400 line-clamp-3">Machine learning regression model calculating caloric expenditure based on user parameters, duration, and biometric parameters.</p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Python</span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Pandas</span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Regression ML</span>
+            </div>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-800 flex items-center justify-between">
+            <a href="https://github.com/BSaiThanmai/Calories-Burned-Prediction" target="_blank" class="text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1"><span>GitHub Repo</span> <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-cyan-400 bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/20">Technical Matrix</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">Skills & <span class="gradient-text">Core Tools</span></h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="glass-card p-6 rounded-3xl border border-slate-800 space-y-4">
+          <h3 class="text-lg font-bold text-white flex items-center gap-2"><i data-lucide="brain-circuit" class="w-5 h-5 text-cyan-400"></i> Data Analysis & ML</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Python</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Pandas & NumPy</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">ML Algorithms</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">LLM Fundamentals</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Data Cleaning</span>
+          </div>
+        </div>
+
+        <div class="glass-card p-6 rounded-3xl border border-slate-800 space-y-4">
+          <h3 class="text-lg font-bold text-white flex items-center gap-2"><i data-lucide="bar-chart-3" class="w-5 h-5 text-violet-400"></i> Visualization</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Power BI (Certified)</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Matplotlib</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Seaborn</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Dashboard Concepts</span>
+          </div>
+        </div>
+
+        <div class="glass-card p-6 rounded-3xl border border-slate-800 space-y-4">
+          <h3 class="text-lg font-bold text-white flex items-center gap-2"><i data-lucide="database" class="w-5 h-5 text-emerald-400"></i> Databases & Web</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">SQL Databases</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Flask Web Framework</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Twilio Webhooks</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Gemini API</span>
+          </div>
+        </div>
+
+        <div class="glass-card p-6 rounded-3xl border border-slate-800 space-y-4">
+          <h3 class="text-lg font-bold text-white flex items-center gap-2"><i data-lucide="wrench" class="w-5 h-5 text-amber-400"></i> Tools & Environment</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Jupyter Notebook</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Git & GitHub</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Azure ML Studio</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">MS Excel & MS Office</span>
+          </div>
+        </div>
+
+        <div class="glass-card p-6 rounded-3xl border border-slate-800 space-y-4">
+          <h3 class="text-lg font-bold text-white flex items-center gap-2"><i data-lucide="users" class="w-5 h-5 text-blue-400"></i> Soft Skills</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Problem Solving</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Analytical Thinking</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Team Collaboration</span>
+            <span class="px-3 py-1.5 rounded-xl bg-slate-900 text-xs font-semibold border border-slate-800">Fast Learner</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="py-24 relative bg-slate-950/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-cyan-400 bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/20">Career Journey</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">Work Experience & <span class="gradient-text">Internships</span></h2>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-8">
+        
+        <div class="glass-card p-8 rounded-3xl border border-slate-800 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Data Analyst & AI/ML Intern</span>
+            <span class="text-xs text-slate-400">Jan 2026 – July 2026</span>
+          </div>
+          <h3 class="text-xl font-bold font-heading text-white">SAL Biosciences Pvt. Ltd.</h3>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li class="flex items-start gap-2"><i data-lucide="chevron-right" class="w-4 h-4 text-cyan-400 mt-0.5"></i> Applied Python, SQL, and ML techniques for data analysis, visualization, and business reporting.</li>
+            <li class="flex items-start gap-2"><i data-lucide="chevron-right" class="w-4 h-4 text-cyan-400 mt-0.5"></i> Assisted in dataset preparation, analytical reports development, and database management.</li>
+          </ul>
+        </div>
+
+        <div class="glass-card p-8 rounded-3xl border border-slate-800 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-violet-500/10 text-violet-400 border border-violet-500/20">Foundations of AI Intern</span>
+            <span class="text-xs text-slate-400">April 2025 – May 2025</span>
+          </div>
+          <h3 class="text-xl font-bold font-heading text-white">Edunet Foundation</h3>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li class="flex items-start gap-2"><i data-lucide="chevron-right" class="w-4 h-4 text-violet-400 mt-0.5"></i> Developed and deployed ML models using Microsoft Azure Cognitive Services and Azure ML Studio.</li>
+            <li class="flex items-start gap-2"><i data-lucide="chevron-right" class="w-4 h-4 text-violet-400 mt-0.5"></i> Gained experience in data preprocessing, model evaluation, and integrating APIs.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-cyan-400 bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/20">Get In Touch</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">Let's Connect & <span class="gradient-text">Collaborate</span></h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-5 glass-card p-8 rounded-3xl border border-slate-800 space-y-6">
+          <h3 class="text-2xl font-bold font-heading text-white">Direct Contact</h3>
+          <div class="space-y-4 text-sm text-slate-300">
+            <div class="flex items-center gap-3 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <i data-lucide="mail" class="w-5 h-5 text-cyan-400"></i>
+              <span>hthanmai@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <i data-lucide="phone" class="w-5 h-5 text-violet-400"></i>
+              <span>+91 9347765443</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <i data-lucide="map-pin" class="w-5 h-5 text-emerald-400"></i>
+              <span>Hyderabad, Telangana, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 glass-card p-8 rounded-3xl border border-slate-800 space-y-4">
+          <h3 class="text-2xl font-bold font-heading text-white">Send Message</h3>
+          <form onsubmit="alert('Message sent successfully! Badri will respond shortly.'); return false;" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input type="text" placeholder="Your Name" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-100 text-sm focus:border-cyan-500 outline-none">
+              <input type="email" placeholder="Your Email" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-100 text-sm focus:border-cyan-500 outline-none">
+            </div>
+            <input type="text" placeholder="Subject" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-100 text-sm focus:border-cyan-500 outline-none">
+            <textarea rows="4" placeholder="Your Message" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-100 text-sm focus:border-cyan-500 outline-none resize-none"></textarea>
+            <button type="submit" class="w-full py-4 px-6 rounded-2xl font-bold text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-violet-600 shadow-xl shadow-cyan-500/20 hover:scale-[1.01] transition flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-8 text-center text-xs text-slate-500">
+    <p>© 2026 Badri Saithanmai. Designed & Built with Next.js 14, Tailwind CSS & Framer Motion.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    // Theme toggle logic
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      document.documentElement.classList.toggle('light');
+    });
+  </script>
+</body>
+</html>

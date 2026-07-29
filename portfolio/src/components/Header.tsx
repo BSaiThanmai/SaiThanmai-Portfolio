@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Download, Code2, Sparkles } from 'lucide-react';
+import { Menu, X, Download, Code2, Sparkles, FileText } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 
 const navItems = [
@@ -62,7 +62,15 @@ export default function Header() {
           </nav>
 
           {/* Right Actions */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href="/resume.html"
+              target="_blank"
+              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-cyan-400 bg-cyan-500/10 border border-cyan-500/30 rounded-full hover:bg-cyan-500/20 transition-all duration-200"
+            >
+              <FileText className="w-4 h-4" />
+              <span>Resume</span>
+            </a>
             <ThemeToggle />
             <a
               href="mailto:hthanmai@gmail.com"
@@ -103,6 +111,13 @@ export default function Header() {
             ))}
           </nav>
           <div className="pt-3 border-t border-slate-800 flex flex-col gap-3">
+            <a
+              href="/resume.html"
+              target="_blank"
+              className="w-full text-center py-3 text-sm font-semibold text-cyan-400 bg-cyan-500/10 border border-cyan-500/30 rounded-xl"
+            >
+              📄 Download Resume
+            </a>
             <a
               href="mailto:hthanmai@gmail.com"
               className="w-full text-center py-3 text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl shadow-lg"

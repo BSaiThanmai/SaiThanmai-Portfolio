@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Github, Linkedin, Mail, Phone, MapPin, Download, Sparkles, Brain, Cpu, Database } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, Mail, Phone, MapPin, Download, Sparkles, Brain, Cpu, Database, FileText } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 export default function Hero() {
@@ -26,7 +26,7 @@ export default function Hero() {
             {/* Availability Badge */}
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-sm font-medium backdrop-blur-md shadow-inner">
               <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping" />
-              <span>Available for IT & AI/ML Internships</span>
+              <span>Available for IT & AI/ML Opportunities</span>
             </div>
 
             {/* Headline */}
@@ -59,7 +59,7 @@ export default function Hero() {
               </span>
             </div>
 
-            {/* Action Buttons */}
+            {/* Action Buttons with Download Resume */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
               <a
                 href="#projects"
@@ -70,18 +70,20 @@ export default function Hero() {
               </a>
 
               <a
-                href="#contact"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-semibold text-slate-200 bg-slate-800/80 hover:bg-slate-800 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 shadow-md"
+                href="/resume.html"
+                target="_blank"
+                download="Badri_Saithanmai_Resume.html"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-semibold text-white bg-gradient-to-r from-violet-600 to-cyan-500 shadow-lg shadow-violet-500/20 hover:scale-105 transition-all duration-300"
               >
-                <span>Contact Me</span>
+                <Download className="w-5 h-5" />
+                <span>Download Resume</span>
               </a>
 
               <a
-                href={`mailto:${personalInfo.email}?subject=Interview%20Opportunity%20-%20Badri%20Saithanmai`}
-                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-full font-medium text-slate-300 hover:text-cyan-400 bg-transparent border border-slate-800 hover:border-slate-700 transition-all duration-300"
+                href="#contact"
+                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-full font-semibold text-slate-200 bg-slate-800/80 hover:bg-slate-800 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 shadow-md"
               >
-                <Download className="w-4 h-4" />
-                <span>Get CV</span>
+                <span>Contact Me</span>
               </a>
             </div>
 

@@ -1,0 +1,178 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Length 2800 >>
+stream
+BT
+/F1 18 Tf
+1 0 0 1 180 750 Tm
+(BADRI SAITHANMAI) Tj
+/F2 10 Tf
+1 0 0 1 110 735 Tm
+(Mobile: +91 9347765443 | Email: hthanmai@gmail.com) Tj
+1 0 0 1 115 722 Tm
+(LinkedIn: linkedin.com/in/saithanmai | GitHub: github.com/BSaiThanmai) Tj
+
+0 0 0 rg
+1 0 0 1 36 705 Tm
+(_________________________________________________________________________________) Tj
+
+/F1 12 Tf
+1 0 0 1 36 685 Tm
+(PROFILE SUMMARY) Tj
+/F2 9.5 Tf
+1 0 0 1 36 670 Tm
+(Motivated Computer Science (AIML) student with strong foundations in Python, OOPs, DBMS, and core software) Tj
+1 0 0 1 36 658 Tm
+(development concepts. Hands-on experience in building and deploying machine learning models through academic and) Tj
+1 0 0 1 36 646 Tm
+(internship projects. Comfortable with SQL databases, structured queries, and data analytics.) Tj
+
+/F1 12 Tf
+1 0 0 1 36 625 Tm
+(EDUCATION) Tj
+/F1 10 Tf
+1 0 0 1 36 610 Tm
+(B.Tech in Computer Science (Artificial Intelligence & Machine Learning)) Tj
+/F2 10 Tf
+1 0 0 1 450 610 Tm
+(2022 - 2026) Tj
+1 0 0 1 36 598 Tm
+(MallaReddy Institute of Technology And Sciences, Hyderabad, Telangana) Tj
+/F1 9.5 Tf
+1 0 0 1 450 598 Tm
+(CGPA: 7.91) Tj
+
+/F1 12 Tf
+1 0 0 1 36 575 Tm
+(TECHNICAL SKILLS) Tj
+/F1 9.5 Tf
+1 0 0 1 45 560 Tm
+(Data Analysis:) Tj
+/F2 9.5 Tf
+1 0 0 1 140 560 Tm
+(Python, Pandas, NumPy, SQL, Data Cleaning, EDA) Tj
+/F1 9.5 Tf
+1 0 0 1 45 547 Tm
+(Data Science & ML:) Tj
+/F2 9.5 Tf
+1 0 0 1 140 547 Tm
+(Machine Learning Basics, LLM Fundamentals, Scikit-Learn) Tj
+/F1 9.5 Tf
+1 0 0 1 45 534 Tm
+(Visualization & Tools:) Tj
+/F2 9.5 Tf
+1 0 0 1 140 534 Tm
+(Power BI, Matplotlib, Seaborn, Jupyter Notebook, Git, GitHub) Tj
+/F1 9.5 Tf
+1 0 0 1 45 521 Tm
+(Databases & Web:) Tj
+/F2 9.5 Tf
+1 0 0 1 140 521 Tm
+(SQL Databases, Flask, Gemini API, Twilio Webhooks, ngrok) Tj
+
+/F1 12 Tf
+1 0 0 1 36 500 Tm
+(PROJECTS) Tj
+/F1 10 Tf
+1 0 0 1 36 485 Tm
+(AI Sales Call Agent | Python, Flask, Gemini API, Twilio, ngrok) Tj
+/F2 9 Tf
+1 0 0 1 45 472 Tm
+(- Developed an AI-powered voice sales agent using Python, Gemini API, and Twilio to automate customer calls.) Tj
+1 0 0 1 45 461 Tm
+(- Integrated real-time speech processing, AI response generation, and Flask/ngrok webhook handling.) Tj
+
+/F1 10 Tf
+1 0 0 1 36 445 Tm
+(Detection of Ransomware Attack Using Disk & Usage Data) Tj
+/F2 9 Tf
+1 0 0 1 45 432 Tm
+(- Built a machine learning ransomware detection classifier evaluating system activity patterns and disk analytics.) Tj
+1 0 0 1 45 421 Tm
+(- Extracted behavior features and trained classification models with high detection precision.) Tj
+
+/F1 10 Tf
+1 0 0 1 36 405 Tm
+(Calories Burned Prediction Model) Tj
+/F2 9 Tf
+1 0 0 1 45 392 Tm
+(- Developed a regression machine learning model to predict caloric burn based on biometric metrics.) Tj
+1 0 0 1 45 381 Tm
+(- Performed comprehensive data cleaning, feature preprocessing, and exploratory data analysis.) Tj
+
+/F1 12 Tf
+1 0 0 1 36 360 Tm
+(INTERNSHIPS) Tj
+/F1 10 Tf
+1 0 0 1 36 345 Tm
+(SAL Biosciences Pvt. Ltd. - Data Analyst & AI/ML Intern) Tj
+/F2 9.5 Tf
+1 0 0 1 430 345 Tm
+(Jan 2026 - July 2026) Tj
+/F2 9 Tf
+1 0 0 1 45 332 Tm
+(- Applied Python, SQL, and ML for data analysis, visualization, dataset prep, and business reporting.) Tj
+
+/F1 10 Tf
+1 0 0 1 36 315 Tm
+(Edunet Foundation - Foundations of AI Intern) Tj
+/F2 9.5 Tf
+1 0 0 1 430 315 Tm
+(Apr 2025 - May 2025) Tj
+/F2 9 Tf
+1 0 0 1 45 302 Tm
+(- Developed & deployed ML models using Microsoft Azure Cognitive Services and Azure ML Studio.) Tj
+
+/F1 12 Tf
+1 0 0 1 36 280 Tm
+(ACHIEVEMENTS & CERTIFICATIONS) Tj
+/F2 9 Tf
+1 0 0 1 45 267 Tm
+(- Bionic Eye Hackathon Project Presentation | College Hackathon Showcase) Tj
+1 0 0 1 45 255 Tm
+(- Certification: Power BI Data Visualization (10000Coders)) Tj
+1 0 0 1 45 243 Tm
+(- Certification: AI Sales Call Agent Systems (10000Coders)) Tj
+1 0 0 1 45 231 Tm
+(- Certification: Learning AI Tools (OutSkill)) Tj
+1 0 0 1 45 219 Tm
+(- Learnathon Volunteer Leadership | MRITS College Workshops) Tj
+
+/F1 12 Tf
+1 0 0 1 36 198 Tm
+(SOFT SKILLS) Tj
+/F2 9.5 Tf
+1 0 0 1 45 185 Tm
+(Problem Solving | Team Collaboration | Analytical Thinking | Fast Learner) Tj
+ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000262 00000 n 
+0000000336 00000 n 
+0000000405 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3300
+%%EOF
